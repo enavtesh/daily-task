@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zay Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #212934;
+            color: #fff;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        nav {
+            background-color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .logo {
+            color: #5cb874;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: #eee;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 60px 20px;
+        }
+
+        .hero-text {
+            max-width: 40%;
+        }
+
+        .categories, .featured {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .categories h2, .featured h2 {
+            margin-bottom: 20px;
+        }
+
+        .cat-container, .products {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .cat-box, .product-box {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 250px;
+        }
+
+        .cat-box img, .product-box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .cat-box h4, .product-box h4 {
+            margin: 15px 0 10px;
+        }
+
+        .product-box p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            background: #212934;
+            color: white;
+            padding: 40px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        footer h4 {
+            margin-bottom: 15px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+        }
+
+        footer input[type="email"] {
+            padding: 8px;
+            border: none;
+            width: 180px;
+            margin-right: 5px;
+        }
+
+        footer button {
+            padding: 8px 12px;
+            background: #5cb874;
+            border: none;
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            background: #1d232a;
+            color: #aaa;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>info@company.com | 010-020-0340</div>
+        <div>Social Icons</div>
+    </header>
+
+    <nav>
+        <div class="logo">Zay</div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Proident occaecat</h1>
+            <p>Aliquip ex ea commodo consequat. You are permitted to use this Zay CSS template for your commercial websites.</p>
+        </div>
+        <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/banner_img_01.jpg" alt="Product" width="200">
+    </section>
+
+    <section class="categories">
+        <h2>Categories of The Month</h2>
+        <p>Exceptetur sint occaecat cupidatat non proident...</p>
+        <div class="cat-container">
+            <div class="cat-box">
+                <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/category_img_01.jpg" alt="Watches">
+                <h4>Watches</h4>
+                <button>Go Shop</button>
+            </div>
+            <div class="cat-box">
+                <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/category_img_02.jpg" alt="Shoes">
+                <h4>Shoes</h4>
+                <button>Go Shop</button>
+            </div>
+            <div class="cat-box">
+                <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/category_img_03.jpg" alt="Accessories">
+                <h4>Accessories</h4>
+                <button>Go Shop</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2>Featured Product</h2>
+        <p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+        <div class="products">
+            <div class="product-box">
+                <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/feature_prod_01.jpg" alt="Gym Weight">
+                <h4>Gym Weight</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="product-box">
+                <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/feature_prod_02.jpg" alt="Nike Watch">
+                <h4>Cloud Nike Shoes</h4>
+                <p>Aenean gravida dignissim finibus. Nullam ipsum diam...</p>
+            </div>
+            <div class="product-box">
+                <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/feature_prod_03.jpg" alt="Camera">
+                <h4>Summer Addides Shoes</h4>
+                <p>Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h4>Zay Shop</h4>
+            <p>123 Consectetur at ligula 10660</p>
+            <p>010-020-0340</p>
+            <p>info@company.com</p>
+        </div>
+        <div>
+            <h4>Products</h4>
+            <ul>
+                <li>Luxury</li>
+                <li>Sport Wear</li>
+                <li>Men's Shoes</li>
+                <li>Women's Shoes</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Further Info</h4>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Shop Locations</li>
+                <li>FAQs</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Newsletter</h4>
+            <input type="email" placeholder="Email address">
+            <button>Subscribe</button>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright &copy; 2021 Company Name | Designed by TemplateMo
+    </div>
+</body>
+
+</html>
