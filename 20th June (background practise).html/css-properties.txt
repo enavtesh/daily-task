@@ -1,0 +1,47 @@
+/* CSS Properties Explanation */
+
+/* 1. color */
+Defines the text color.
+Example: color: red; or color: #333;
+
+/* 2. background-color */
+Sets the background color of an element.
+Example: background-color: lightgray;
+
+/* 3. background-image */
+Sets a background image using a URL.
+Example: background-image: url('https://example.com/image.jpg');
+
+/* 4. background-repeat */
+Controls whether the background image repeats.
+Example: background-repeat: no-repeat;
+
+/* 5. background-size */
+Specifies the size of the background image.
+Example: background-size: cover;
+
+/* 6. background-position */
+Sets the position of the background image.
+Example: background-position: center;
+
+/* 7. border */
+Defines a border around the element.
+Example: border: 2px solid black;
+
+/* 8. border-radius */
+Makes the corners rounded.
+Example: border-radius: 10px;
+
+/* 9. height */
+Sets the height of the element.
+Example: height: 100px;
+
+/* 10. width */
+Sets the width of the element.
+Example: width: 300px;
+
+/* 11. linear-gradient */
+Creates a smooth gradient background.
+Example: background: linear-gradient(to right, red, blue);
+
+/* 12. font-family, padding, margin, display (optional extras if studied) */
