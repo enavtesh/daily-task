@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Social Cards</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  width: 250px;
+  padding: 30px 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Twitter Style */
+.twitter button {
+  background: black;
+  color: white;
+}
+
+/* Instagram Style */
+.instagram {
+  background: #e1306c;
+  color: white;
+  border: none;
+}
+
+.instagram button {
+  background: white;
+  color: #e1306c;
+}
+
+/* YouTube Style */
+.youtube button {
+  background: black;
+  color: white;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <div class="card twitter">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter Logo" class="logo">
+      <h2>TWITTER</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam aliquid non eligendi, nemo est neque reiciendis error?</p>
+      <button>READ MORE</button>
+    </div>
+
+    <div class="card instagram">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="logo">
+      <h2>INSTAGRAM</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam aliquid non eligendi, nemo est neque reiciendis error?</p>
+      <button>READ MORE</button>
+    </div>
+
+    <div class="card youtube">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="logo">
+      <h2>YOUTUBE</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam aliquid non eligendi, nemo est neque reiciendis error?</p>
+      <button>READ MORE</button>
+    </div>
+
+  </div>
+</body>
+</html>

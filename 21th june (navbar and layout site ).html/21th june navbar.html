@@ -1,0 +1,93 @@
+<!-- task 1 -->
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Navbar</title>
+    <style>
+        body {
+            background-color: #b2f0f6;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #006d6d;
+            padding: 10px 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            color: white;
+        }
+
+        .nav-left,
+        .nav-center,
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-center a,
+        .nav-left a,
+        .nav-right a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .button {
+            background-color: white;
+            color: #006d6d;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .logo {
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- First Navbar -->
+    <div class="navbar">
+        <div class="nav-left logo">B W C</div>
+        <div class="nav-center"> <a href="#">HOME</a> <a href="#">ABOUT</a>
+            <a href="#">SERVICES</a>
+        </div>
+        <div class="nav-right">
+            <button class="button">CONTACT</button>
+        </div>
+    </div>
+    <!-- Second Navbar -->
+    <div class="navbar">
+        <div class="nav-center">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+
+            <a href="#">SERVICES</a>
+            <button class="button">CONTACT</button>
+        </div>
+        <div class="logo">B W C</div>
+    </div> <!-- Third Navbar -->
+    <div class="navbar">
+
+        <div class="nav-center">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICES</a>
+        </div>
+        <div class="nav-right">
+            <div class="logo">B W C</div>
+            <button class="button">CONTACT</button>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
