@@ -1,0 +1,72 @@
+<!-- Task 1 -->
+
+
+ Task 1: CSS Properties and Values (Dropdown Menu)
+
+-> position
+
+Value: relative, absolute
+
+Use: Positions elements in relation to others. Used for dropdown to appear below or beside a menu.
+
+-> display
+
+Value: flex, none, block
+
+Use: Controls layout. 
+
+flex: Arrange menu items in a row.
+
+none: Hide dropdowns.
+
+block: Show dropdown on hover.
+
+->background-color
+
+Value: #2c3e50, #1e75a9, etc.
+Use: Sets background color of nav bar and menu.
+
+-> padding
+
+Value: 10px 20px, etc.
+Use: Adds space inside elements like buttons or links.
+
+-> margin
+
+Value: 0, 5px, etc.
+Use: Adds space outside elements (like between menu items).
+
+-> color
+
+Value: white, black, etc.
+Use: Changes text color.
+
+-> text-decoration
+
+Value: none
+Use: Removes underline from links.
+
+-> hover
+
+Use: CSS pseudo-class to show dropdown when mouse is over.
+nav ul li:hover > ul { display: flex; } 
+
+-> border-radius
+
+Value: 4px, 5px
+Use: Rounds the corners of menu buttons.
+box-sizing
+
+->Value: border-box
+
+Use: Includes padding and border in total width/height.
+
+-> z-index
+
+Value: 999
+Use: Brings dropdown above other elements.
+
+-> transition
+
+Value: background 0.3s
+Use: Smooth hover effect

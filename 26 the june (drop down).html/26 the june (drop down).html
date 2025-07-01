@@ -1,0 +1,108 @@
+<!-- task 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Level Dropdown Menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e9eef4;
+    }
+
+    nav {
+      background-color: #1e75a9;
+      padding: 10px 5%;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+      background-color: #2c3e50;
+      margin: 0 5px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #3e5770;
+    }
+
+    /* Dropdown Menu */
+    nav ul li ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      flex-direction: column;
+      min-width: 160px;
+      z-index: 999;
+    }
+
+    nav ul li:hover > ul {
+      display: flex;
+    }
+
+    /* Sub-submenu (like Photography -> Nature) */
+    nav ul li ul li ul {
+      left: 100%;
+      top: 0;
+    }
+
+    /* Logo (optional) */
+    .logo {
+      margin-right: auto;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <div class="logo">≡</div>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li>
+        <a href="#">Work ▾</a>
+        <ul>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Development</a></li>
+          <li>
+            <a href="#">Photography ▸</a>
+            <ul>
+              <li><a href="#">Nature</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">Pets</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Writing</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
