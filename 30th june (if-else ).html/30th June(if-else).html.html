@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Practice Tasks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #ec6090;
+    }
+    h2 {
+      color: #ffcc00;
+    }
+    h3 {
+      color: #00d1ff;
+      margin-top: 40px;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+    input, button {
+      padding: 8px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: none;
+    }
+    input {
+      width: 200px;
+    }
+    button {
+      background-color: #ec6090;
+      color: white;
+      cursor: pointer;
+    }
+    .task {
+      margin-bottom: 30px;
+      padding: 10px;
+      border: 1px solid #444;
+      border-radius: 10px;
+      background-color: #1f1f1f;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>JavaScript Practice Tasks</h1>
+
+  <h3> Beginner Level (1–10)</h3>
+  <div class="task">
+    <h2>1. Check Even or Odd</h2>
+    <input type="number" id="evenOddNum" placeholder="Enter a number">
+    <button onclick="checkEvenOdd()">Check</button>
+    <p id="evenOddResult"></p>
+  </div>
+
+  <!-- Placeholder for more beginner tasks -->
+
+  <h3> Intermediate Level (11–20)</h3>
+  <div class="task">
+    <h2>11. Greatest of Three Numbers</h2>
+    <input type="number" id="num1" placeholder="Number 1">
+    <input type="number" id="num2" placeholder="Number 2">
+    <input type="number" id="num3" placeholder="Number 3">
+    <button onclick="findGreatest()">Find Greatest</button>
+    <p id="greatestResult"></p>
+  </div>
+
+  <div class="task">
+    <h2>12. Check Leap Year</h2>
+    <input type="number" id="leapYear" placeholder="Enter Year">
+    <button onclick="checkLeapYear()">Check</button>
+    <p id="leapYearResult"></p>
+  </div>
+
+  <div class="task">
+    <h2>13. Character Type</h2>
+    <input type="text" id="charType" maxlength="1" placeholder="Enter a character">
+    <button onclick="checkCharType()">Check</button>
+    <p id="charTypeResult"></p>
+  </div>
+
+  <div class="task">
+    <h2>14. Grade Based on Marks</h2>
+    <input type="number" id="marks" placeholder="Marks out of 100">
+    <button onclick="gradeMarks()">Check Grade</button>
+    <p id="gradeResult"></p>
+  </div>
+
+  <div class="task">
+    <h2>15. Weekday by Number</h2>
+    <input type="number" id="dayNumber" placeholder="Enter (1-7)">
+    <button onclick="findWeekday()">Show Day</button>
+    <p id="weekdayResult"></p>
+  </div>
+
+  <h3> Advanced Level (21–30)</h3>
+  <div class="task">
+    <h2>21. Average Marks & Grade</h2>
+    <input type="number" id="sub1" placeholder="Subject 1">
+    <input type="number" id="sub2" placeholder="Subject 2">
+    <input type="number" id="sub3" placeholder="Subject 3">
+    <input type="number" id="sub4" placeholder="Subject 4">
+    <input type="number" id="sub5" placeholder="Subject 5">
+    <button onclick="averageGrade()">Calculate Grade</button>
+    <p id="averageGradeResult"></p>
+  </div>
+
+  <div class="task">
+    <h2>22. Divisible by 3 or 5 but not both</h2>
+    <input type="number" id="numDiv3or5" placeholder="Enter number">
+    <button onclick="checkDiv3or5()">Check</button>
+    <p id="div3or5Result"></p>
+  </div>
+
+  <div class="task">
+    <h2>23. Palindrome Number</h2>
+    <input type="number" id="palNum" placeholder="Enter number">
+    <button onclick="checkPalindrome()">Check</button>
+    <p id="palResult"></p>
+  </div>
+
+  <div class="task">
+    <h2>24. Sum of Digits - Even or Odd</h2>
+    <input type="number" id="sumDigitsNum" placeholder="Enter number">
+    <button onclick="sumOfDigitsEvenOdd()">Check</button>
+    <p id="sumDigitsResult"></p>
+  </div>
+
+  <div class="task">
+    <h2>25. Overtime Pay</h2>
+    <input type="number" id="hoursWorked" placeholder="Hours worked">
+    <button onclick="calculateOvertime()">Calculate</button>
+    <p id="overtimeResult"></p>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      window.checkEvenOdd = function() {
+        const num = parseInt(document.getElementById("evenOddNum").value);
+        const result = (num % 2 === 0) ? "Even" : "Odd";
+        document.getElementById("evenOddResult").innerText = `The number is ${result}.`;
+      }
+
+      window.findGreatest = function() {
+        let a = parseFloat(document.getElementById('num1').value);
+        let b = parseFloat(document.getElementById('num2').value);
+        let c = parseFloat(document.getElementById('num3').value);
+        let greatest = (a > b && a > c) ? a : (b > c ? b : c);
+        document.getElementById('greatestResult').innerText = `Greatest is: ${greatest}`;
+      }
+
+      window.checkLeapYear = function() {
+        const year = parseInt(document.getElementById('leapYear').value);
+        const isLeap = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+        document.getElementById('leapYearResult').innerText = isLeap ? `${year} is a Leap Year` : `${year} is not a Leap Year`;
+      }
+
+      window.checkCharType = function() {
+        const char = document.getElementById('charType').value;
+        let result = '';
+        if (char >= 'A' && char <= 'Z') result = 'Uppercase Letter';
+        else if (char >= 'a' && char <= 'z') result = 'Lowercase Letter';
+        else if (!isNaN(char)) result = 'Digit';
+        else result = 'Special Character';
+        document.getElementById('charTypeResult').innerText = result;
+      }
+
+      window.gradeMarks = function() {
+        const marks = parseInt(document.getElementById('marks').value);
+        let grade = '';
+        if (marks >= 90) grade = 'A';
+        else if (marks >= 75) grade = 'B';
+        else if (marks >= 60) grade = 'C';
+        else if (marks >= 40) grade = 'D';
+        else grade = 'F';
+        document.getElementById('gradeResult').innerText = `Grade: ${grade}`;
+      }
+
+      window.findWeekday = function() {
+        const day = parseInt(document.getElementById('dayNumber').value);
+        const days = ['Invalid', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+        document.getElementById('weekdayResult').innerText = (day >= 1 && day <= 7) ? days[day] : 'Invalid day number';
+      }
+
+      window.averageGrade = function() {
+        const marks = [
+          parseInt(document.getElementById('sub1').value),
+          parseInt(document.getElementById('sub2').value),
+          parseInt(document.getElementById('sub3').value),
+          parseInt(document.getElementById('sub4').value),
+          parseInt(document.getElementById('sub5').value)
+        ];
+        const avg = marks.reduce((a, b) => a + b, 0) / marks.length;
+        let grade = '';
+        if (avg >= 90) grade = 'A';
+        else if (avg >= 75) grade = 'B';
+        else if (avg >= 60) grade = 'C';
+        else if (avg >= 40) grade = 'D';
+        else grade = 'F';
+        document.getElementById('averageGradeResult').innerText = `Average: ${avg.toFixed(2)}, Grade: ${grade}`;
+      }
+
+      window.checkDiv3or5 = function() {
+        const n = parseInt(document.getElementById('numDiv3or5').value);
+        const result = (n % 3 === 0 && n % 5 === 0) ? 'Divisible by both' : (n % 3 === 0 || n % 5 === 0) ? 'Yes' : 'No';
+        document.getElementById('div3or5Result').innerText = result;
+      }
+
+      window.checkPalindrome = function() {
+        const num = document.getElementById('palNum').value;
+        const reversed = num.split('').reverse().join('');
+        document.getElementById('palResult').innerText = (num === reversed) ? 'Palindrome' : 'Not Palindrome';
+      }
+
+      window.sumOfDigitsEvenOdd = function() {
+        const num = document.getElementById('sumDigitsNum').value;
+        const sum = [...num].reduce((acc, digit) => acc + parseInt(digit), 0);
+        const result = (sum % 2 === 0) ? 'Sum is Even' : 'Sum is Odd';
+        document.getElementById('sumDigitsResult').innerText = result;
+      }
+
+      window.calculateOvertime = function() {
+        const hours = parseFloat(document.getElementById('hoursWorked').value);
+        const overtime = hours > 40 ? (hours - 40) * 12 : 0;
+        document.getElementById('overtimeResult').innerText = `Overtime Pay: Rs. ${overtime}`;
+      }
+    });
+  </script>
+</body>
+</html>
